@@ -2,7 +2,6 @@ import datetime
 from rest_framework import serializers
 from todos.models import Todo
 from categories.models import Category
-from rest_framework import serializers
 from django.contrib.auth.models import User
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):

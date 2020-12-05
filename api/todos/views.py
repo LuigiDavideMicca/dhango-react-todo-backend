@@ -1,12 +1,8 @@
 from todos.models import Todo
 from todos.serializers import TodosSerializer, UserSerializer
 from django.http import Http404
-from rest_framework.views import APIView
-from rest_framework import generics
-from rest_framework.response import Response
-from rest_framework import status
+from rest_framework import generics, permissions, authentication
 from django.contrib.auth.models import User
-from rest_framework import permissions, authentication
 
 
 class TodosList(generics.ListCreateAPIView):

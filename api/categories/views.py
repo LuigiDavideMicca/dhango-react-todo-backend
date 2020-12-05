@@ -1,9 +1,6 @@
 from categories.models import Category
 from categories.serializers import CategoriesSerializer
-from rest_framework import generics
-from rest_framework.response import Response
-from rest_framework import status
-from rest_framework import permissions
+from rest_framework import generics, permissions
 
 
 class CategoriesList(generics.ListCreateAPIView):

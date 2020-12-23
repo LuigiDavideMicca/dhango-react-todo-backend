@@ -6,9 +6,6 @@ from django.contrib.auth.models import User
 
 
 class TodosList(generics.ListCreateAPIView):
-    """
-    List all snippets, or create a new snippet.
-    """
     def get_queryset(self):
         return Todo.objects.filter(owner=self.request.user)
 
